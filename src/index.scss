@@ -9,4 +9,146 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  background-color: rgb(249, 250, 251);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 0.6rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  margin-bottom: 23px;
+}
+
+header nav:first-child li:nth-child(2) {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+header ul li:nth-child(2):hover {
+  text-decoration: none;
+}
+
+header ul li:nth-child(3):hover {
+  text-decoration: none;
+}
+
+header ul li + li {
+  display: flex;
+  align-items: center;
+  margin-right: 1.4rem;
+  font-size: 0.9rem;
+}
+
+header li + li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+}
+
+header li:nth-child(3) a {
+  color: #586069;
+}
+
+header nav:nth-child(2) {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+header nav:nth-child(2) li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+}
+
+header nav:nth-child(2) li:nth-child(2) {
+  margin: 0;
+  margin-left: 1.4rem;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section div > a img {
+  width: 365px;
+  border: solid #e1e4e8 0.1rem;
+  border-radius: 0.6rem;
+  padding: 0.4rem;
+  background-color: white;
+}
+
+div {
+  margin: 1rem auto;
+  font-size: 0.9rem;
+}
+
+div ul > li {
+  color: #586069;
+}
+
+div ul li:first-child a:hover {
+  text-decoration: underline;
+  color: #0366d6;
+}
+
+div ul {
+  margin-top: 0.7rem;
+}
+
+div ul li:nth-child(2) a img {
+  border-radius: 0.2rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin: 0;
+}
+
+footer {
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 4rem;
+}
+
+footer div {
+  border-top: 1px #e1e4e8 solid;
+  margin-top: 40px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+@media all and (max-width: 800px) {
+  header nav:nth-child(2) li:nth-child(2) {
+    display: none;
+  }
 }
