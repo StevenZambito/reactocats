@@ -87,7 +87,7 @@ section {
   flex-wrap: wrap;
 }
 
-section div > a img {
+section .octocat > a img {
   width: 365px;
   border: solid #e1e4e8 0.1rem;
   border-radius: 0.6rem;
@@ -95,26 +95,30 @@ section div > a img {
   background-color: white;
 }
 
-div {
+.octocat {
   margin: 1rem auto;
   font-size: 0.9rem;
 }
 
-div ul > li {
+.octocat ul > li {
   color: #586069;
 }
 
-div ul li:first-child a:hover {
+.octocat ul li:first-child a:hover {
   text-decoration: underline;
   color: #0366d6;
 }
 
-div ul {
+.octocat ul {
   margin-top: 0.7rem;
 }
 
-div ul li:nth-child(2) a img {
+.octocat ul li:nth-child(2) a img {
   border-radius: 0.2rem;
+}
+
+.octocat ul li:first-child a {
+  padding-left: 0.3rem;
 }
 
 ul {
@@ -140,7 +144,7 @@ footer {
   margin-top: 4rem;
 }
 
-footer div {
+footer .footer-text {
   border-top: 1px #e1e4e8 solid;
   margin-top: 40px;
   padding-bottom: 24px;
